@@ -1,0 +1,6 @@
+services:
+  zuhoor:
+    build: .
+    container_name: zuhoor-app
+    ports:
+      - "5000:5000"
