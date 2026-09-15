@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.secret_key = 'zuhoor2024'
 UPLOAD_FOLDER = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:gazi706948@localhost/zuhoor_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:gazi706948@mysql/zuhoor_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
