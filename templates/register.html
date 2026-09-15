@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div style="display:flex; align-items:center; justify-content:center; padding:40px 20px;">
+<div style="background:white; border-radius:28px; padding:48px 40px;
+            width:100%; max-width:580px;
+            box-shadow:0 20px 60px rgba(45,106,79,0.15);
+            border-top:5px solid #2d6a4f;">
+
+    <div style="text-align:center; margin-bottom:32px;">
+        <div style="font-size:3rem; margin-bottom:12px;">&#127758;</div>
+        <h2 style="font-size:1.8rem; font-weight:800; color:#1a3d2b;">Join Zuhoor</h2>
+        <p style="color:#74c69d; font-size:0.9rem; margin-top:6px;">
+            Create your account to start visualizing data
+        </p>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div style="background:{% if category == 'error' %}#fee2e2{% else %}#d8f3dc{% endif %};
+                color:{% if category == 'error' %}#dc2626{% else %}#1b4332{% endif %};
+                padding:12px 16px; border-radius:12px; margin-bottom:20px;
+                font-size:0.9rem; font-weight:600;">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="/register">
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+
+            <div style="margin-bottom:16px;">
+                <label style="display:block; font-size:0.85rem; font-weight:700;
+                              color:#1a3d2b; margin-bottom:8px;">Full Name</label>
+                <input type="text" name="naam" required placeholder="Your name"
+                       style="width:100%; padding:13px 16px; border:2px solid #b7e4c7;
+                              border-radius:12px; font-size:0.9rem; color:#1a3d2b;
+                              outline:none; font-family:Inter, sans-serif;">
+            </div>
+
+            <div style="margin-bottom:16px;">
+                <label style="display:block; font-size:0.85rem; font-weight:700;
+                              color:#1a3d2b; margin-bottom:8px;">Email Address</label>
+                <input type="email" name="email" required placeholder="Your email"
+                       style="width:100%; padding:13px 16px; border:2px solid #b7e4c7;
+                              border-radius:12px; font-size:0.9rem; color:#1a3d2b;
+                              outline:none; font-family:Inter, sans-serif;">
+            </div>
+
+            <div style="margin-bottom:16px;">
+                <label style="display:block; font-size:0.85rem; font-weight:700;
+                              color:#1a3d2b; margin-bottom:8px;">Password</label>
+                <input type="password" name="password" required placeholder="Create password"
+                       style="width:100%; padding:13px 16px; border:2px solid #b7e4c7;
+                              border-radius:12px; font-size:0.9rem; color:#1a3d2b;
+                              outline:none; font-family:Inter, sans-serif;">
+            </div>
+
+            <div style="margin-bottom:16px;">
+                <label style="display:block; font-size:0.85rem; font-weight:700;
+                              color:#1a3d2b; margin-bottom:8px;">Profession</label>
+                <input type="text" name="profession" required placeholder="e.g. Data Analyst"
+                       style="width:100%; padding:13px 16px; border:2px solid #b7e4c7;
+                              border-radius:12px; font-size:0.9rem; color:#1a3d2b;
+                              outline:none; font-family:Inter, sans-serif;">
+            </div>
+
+            <div style="margin-bottom:16px;">
+                <label style="display:block; font-size:0.85rem; font-weight:700;
+                              color:#1a3d2b; margin-bottom:8px;">Company / College</label>
+                <input type="text" name="company" required placeholder="Where you work/study"
+                       style="width:100%; padding:13px 16px; border:2px solid #b7e4c7;
+                              border-radius:12px; font-size:0.9rem; color:#1a3d2b;
+                              outline:none; font-family:Inter, sans-serif;">
+            </div>
+
+            <div style="margin-bottom:16px;">
+                <label style="display:block; font-size:0.85rem; font-weight:700;
+                              color:#1a3d2b; margin-bottom:8px;">City</label>
+                <input type="text" name="city" required placeholder="Your city"
+                       style="width:100%; padding:13px 16px; border:2px solid #b7e4c7;
+                              border-radius:12px; font-size:0.9rem; color:#1a3d2b;
+                              outline:none; font-family:Inter, sans-serif;">
+            </div>
+
+        </div>
+
+        <div style="margin-bottom:28px;">
+            <label style="display:block; font-size:0.85rem; font-weight:700;
+                          color:#1a3d2b; margin-bottom:8px;">Phone Number</label>
+            <input type="text" name="phone" required placeholder="Your phone number"
+                   style="width:100%; padding:13px 16px; border:2px solid #b7e4c7;
+                          border-radius:12px; font-size:0.9rem; color:#1a3d2b;
+                          outline:none; font-family:Inter, sans-serif;">
+        </div>
+
+        <button type="submit"
+                style="width:100%; background:linear-gradient(135deg,#2d6a4f,#52b788);
+                       color:white; border:none; border-radius:14px; padding:15px;
+                       font-size:1rem; font-weight:700; cursor:pointer;
+                       font-family:Inter, sans-serif;">
+            Create My Account
+        </button>
+
+    </form>
+
+    <p style="text-align:center; margin-top:24px; color:#74c69d; font-size:0.9rem;">
+        Already have an account?
+        <a href="/login" style="color:#2d6a4f; font-weight:700; text-decoration:none;">
+            Login Here
+        </a>
+    </p>
+
+</div>
+</div>
+
+{% endblock %}

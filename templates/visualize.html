@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Header -->
+<div class="text-center mb-4 mt-2">
+    <h2 style="font-size:2rem; font-weight:800; background: linear-gradient(135deg, #a78bfa, #60a5fa, #34d399); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
+        ✨ Visualization Ready!
+    </h2>
+    <p style="color:rgba(255,255,255,0.5);">Here's your beautiful chart with data insights</p>
+</div>
+
+<!-- Chart -->
+<div class="glass-card">
+    <div class="section-title">
+        <i class="fas fa-chart-area"></i> Your Chart
+        <span class="text-uppercase">{{ chart_type }}</span>
+    </div>
+    <div class="chart-container">
+        {{ chart_html | safe }}
+    </div>
+</div>
+
+<!-- Stats -->
+<div class="glass-card">
+    <div class="section-title">
+        <i class="fas fa-calculator"></i> Summary Statistics
+        <span>Auto Generated</span>
+    </div>
+    <div class="table-responsive">
+        {{ stats | safe }}
+    </div>
+</div>
+
+<!-- Action Buttons -->
+<div class="text-center d-flex justify-content-center gap-3 flex-wrap">
+    <a href="/" class="btn-upload" style="width:auto; padding: 14px 30px; text-decoration:none;">
+        <i class="fas fa-upload me-2"></i>Upload New File
+    </a>
+    <a href="javascript:history.back()" class="btn-back" style="text-decoration:none;">
+        <i class="fas fa-arrow-left me-2"></i>Change Chart
+    </a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+Order_ID,Customer_Name,Age,Gender,Product,Category,Quantity,Price,Discount,City,Order_Date
+1001,Sara Ali,abc,Female,T-shirt,Fashion,3,800,0,,March 03 2024
+1002,Rahul Verma,35,Female,Laptop,Electronics,3,55000,1000,,April 21 2024
+1003,Kabir Singh,,Female,Headphones,Electronics,2,2000,1500,,08-02-2024
+1004,Kabir Singh,35,Male,T-shirt,Fashion,-1,800,,Pune,March 13 2024
+1005,Ayaan Khan,40,Male,Smartphone,Electronics,1,20000,0,,March 29 2024
+1006,Meera Joshi,,Female,T-shirt,Fashion,1,800,,Pune,February 24 2024
+1007,Sara Ali,,Female,Shoes,Fashion,3,2500,0,,26-05-2024
+1008,Sara Ali,30,Male,Refrigerator,Home Appliances,-1,30000,500,Mumbai,27-04-2024
+1009,Ayaan Khan,,Male,Tablet,Electronics,-1,15000,1500,Delhi,23-04-2024
+1010,Rahul Verma,25,Female,Dress,Fashion,2,1500,1000,Bangalore,28-04-2024
+1011,Arjun Rao,40,Female,Tablet,Electronics,3,15000,1000,,17-02-2024
+1012,Ayaan Khan,30,Female,Shoes,Fashion,-1,2500,1000,,08-03-2024
+1013,Rahul Verma,40,Male,Smartphone,Electronics,3,20000,500,Pune,14-03-2024
+1014,Priya Sharma,40,Female,Laptop,Electronics,3,55000,1000,,27-03-2024
+1015,Nisha Patel,25,Female,Tablet,Electronics,1,15000,500,Bangalore,January 10 2024
+1016,Sara Ali,25,Female,Dress,Fashion,3,1500,1000,Delhi,27-04-2024
+1017,Imran Khan,40,Male,Refrigerator,Home Appliances,2,30000,,Delhi,13-01-2024
+1018,Kabir Singh,35,Male,Smartphone,Electronics,-1,20000,1500,Bangalore,16-04-2024
+1019,Ayaan Khan,35,Male,Smartphone,Electronics,-1,20000,,,22-05-2024
+1020,Priya Sharma,35,Male,Refrigerator,Home Appliances,-1,30000,,,April 12 2024
+1021,Sara Ali,40,Male,Smartphone,Electronics,1,20000,0,Bangalore,21-01-2024
+1022,Kabir Singh,25,Female,Headphones,Electronics,-1,2000,500,Bangalore,25-05-2024
+1023,Kabir Singh,35,Female,Dress,Fashion,-1,1500,,Mumbai,22-02-2024
+1024,Meera Joshi,40,Female,Smartphone,Electronics,1,20000,,Mumbai,02-02-2024
+1025,Arjun Rao,40,Female,T-shirt,Fashion,-1,800,500,Pune,05-01-2024
+1026,Zoya Sheikh,25,Female,Smartphone,Electronics,1,20000,1500,Delhi,April 01 2024
+1027,Zoya Sheikh,,Female,Headphones,Electronics,2,2000,1000,Delhi,27-04-2024
+1028,Nisha Patel,30,Male,Headphones,Electronics,2,2000,,Delhi,May 02 2024
+1029,Kabir Singh,35,Female,Laptop,Electronics,-1,55000,,Delhi,March 25 2024
+1030,Nisha Patel,30,Female,Dress,Fashion,-1,1500,500,,11-02-2024
+1031,Kabir Singh,25,Male,Refrigerator,Home Appliances,3,30000,500,Hyderabad,03-05-2024
+1032,Ayaan Khan,,Male,Dress,Fashion,-1,1500,1500,,14-02-2024
+1033,Kabir Singh,35,Female,Laptop,Electronics,-1,55000,1000,Pune,February 24 2024
+1034,Rahul Verma,40,Male,Smartphone,Electronics,-1,20000,,Mumbai,April 02 2024
+1035,Nisha Patel,abc,Male,Headphones,Electronics,2,2000,0,Bangalore,07-03-2024
+1036,Sara Ali,25,Female,Laptop,Electronics,3,55000,1000,,February 07 2024
+1037,Ayaan Khan,,Female,Dress,Fashion,2,1500,1500,Delhi,03-01-2024
+1038,Imran Khan,,Female,Dress,Fashion,2,1500,,,31-03-2024
+1039,Priya Sharma,35,Male,T-shirt,Fashion,1,800,0,,09-03-2024
+1040,Meera Joshi,25,Male,T-shirt,Fashion,-1,800,500,Hyderabad,04-03-2024
+1041,Sara Ali,,Female,Laptop,Electronics,1,55000,1000,,19-01-2024
+1042,Kabir Singh,40,Female,Laptop,Electronics,1,55000,0,,18-02-2024
+1043,Kabir Singh,35,Male,T-shirt,Fashion,-1,800,1000,,14-05-2024
+1044,Rahul Verma,40,Female,Laptop,Electronics,1,55000,,Mumbai,28-02-2024
+1045,Nisha Patel,,Female,Headphones,Electronics,3,2000,1500,Pune,31-03-2024
+1046,Imran Khan,40,Female,T-shirt,Fashion,-1,800,0,,May 01 2024
+1047,Kabir Singh,abc,Female,Refrigerator,Home Appliances,-1,30000,0,,February 16 2024
+1048,Ayaan Khan,25,Male,Refrigerator,Home Appliances,3,30000,1000,,21-02-2024
+1049,Priya Sharma,40,Female,Smartphone,Electronics,2,20000,,Mumbai,April 30 2024
+1050,Ayaan Khan,40,Male,Refrigerator,Home Appliances,2,30000,1000,Delhi,27-01-2024
+1001,Sara Ali,abc,Female,T-shirt,Fashion,3,800,0,,March 03 2024
+1002,Rahul Verma,35,Female,Laptop,Electronics,3,55000,1000,,April 21 2024

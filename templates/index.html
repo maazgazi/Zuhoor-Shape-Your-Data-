@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="upload-hero">
+    <h1>Welcome to<br><span>Zuhoor</span></h1>
+    <p>Where Data Acquires Shape - Upload any CSV, Excel or JSON and get instant beautiful dashboards!</p>
+
+    <div style="max-width:600px; margin:0 auto 30px auto;
+                display:grid; grid-template-columns:repeat(3,1fr); gap:16px;">
+        <div class="stat-badge-mini">
+            <div class="num">6+</div>
+            <div class="lbl">Chart Types</div>
+        </div>
+        <div class="stat-badge-mini">
+            <div class="num">1000</div>
+            <div class="lbl">Rows/Round</div>
+        </div>
+        <div class="stat-badge-mini">
+            <div class="num">3</div>
+            <div class="lbl">File Formats</div>
+        </div>
+    </div>
+
+    <div class="upload-box">
+        <div class="upload-icon">&#128194;</div>
+        <h3>Drop your file here</h3>
+        <p>Supports CSV, Excel (.xlsx) and JSON formats</p>
+       <form method="POST" enctype="multipart/form-data" action="/upload">
+            <input type="file" name="file" id="fileInput"
+                   accept=".csv,.xlsx,.json" required
+                   style="display:block; width:100%; margin-bottom:16px;
+                          padding:12px; border:1px solid #b7e4c7;
+                          border-radius:12px; background:#f0f7f0;
+                          color:#2d6a4f; font-size:0.9rem; font-weight:500;">
+            <button type="submit" class="btn-upload">
+                Generate Dashboard
+            </button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
